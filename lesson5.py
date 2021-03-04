@@ -186,24 +186,5 @@ dict1['key'] = 'value'
 
 
 
-# # task 17 ---
-# a = int(input('Введите число: '))
-# b = int(input('Введите число: '))
-# c = int(input('Введите число: '))
-# l = [a, b, c]
-# amount = 0
-# i = 0
-# for i in range(len([a, b, c] )+ 1):
-#     if i > 0:
-#         amount += 1
-#         print(i)
-# print(f'Положительных чисел {amount}')
-
-# a = int(input("Первое число: "))
-# b = int(input("Второе число: "))
-# c = int(input("Третье число: "))
-# print('Количество положительных чисел: ', (a > 0) + (b > 0) + (c > 0))
-
-
 # a, b, c = input("введите числа через пробел: ").split()
 # print('Количество положительных чисел: ', (int(a) > 0) + (int(b) > 0) + (int(c) > 0))
