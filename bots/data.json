@@ -1,7 +1,22 @@
-{
-  "name": "$name$",
-  "version": "$version$",
-  "dependencies": {
-    $END$
-  }
-}
+{'base': 'stations',
+ 'clouds': {'all': 91},
+ 'cod': 200,
+ 'coord': {'lat': 42.87, 'lon': 74.59},
+ 'dt': 1615001894,
+ 'id': 1528675,
+ 'main': {'feels_like': -3.96,
+          'humidity': 93,
+          'pressure': 1016,
+          'temp': -1,
+          'temp_max': -1,
+          'temp_min': -1},
+ 'name': 'Bishkek',
+ 'sys': {'country': 'KG',
+         'id': 8871,
+         'sunrise': 1614994179,
+         'sunset': 1615035391,
+         'type': 1},
+ 'timezone': 21600,
+ 'visibility': 2900,
+ 'weather': [{'description': 'mist', 'icon': '50d', 'id': 701, 'main': 'Mist'}],
+ 'wind': {'deg': 0, 'speed': 1}}
