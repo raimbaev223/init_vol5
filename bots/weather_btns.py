@@ -1,12 +1,15 @@
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, \
     InlineKeyboardMarkup, InlineKeyboardButton
 
-
 weather = KeyboardButton('Узнать погоду')
-btns = ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True).add(weather)
+news = KeyboardButton('Новости')
+btns = ReplyKeyboardMarkup(resize_keyboard=True).add(weather, news)
 
-bishkek = InlineKeyboardButton(text='Бишкек', callback_data='bishkek')
-kara_balta = InlineKeyboardButton(text='Кара-Балта', callback_data='kara-balta')
-sokuluk = InlineKeyboardButton(text='Сокулук', callback_data='sokuluk')
-kant = InlineKeyboardButton(text='Кант', callback_data='kant')
-cityes = InlineKeyboardMarkup(row_width=2).add(bishkek, kara_balta, sokuluk, kant)
+next = ReplyKeyboardMarkup(resize_keyboard=True).add(KeyboardButton('Еще новости'))
+
+bishkek = KeyboardButton(text='Бишкек')
+kara_balta = KeyboardButton(text='Кара-Балта')
+sokuluk = KeyboardButton(text='Сокулук')
+kant = KeyboardButton(text='Кант')
+cityes = ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True, row_width=2).add(bishkek, kara_balta,
+                                                                                            sokuluk, kant)
